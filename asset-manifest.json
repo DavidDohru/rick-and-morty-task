@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/rick-and-morty-task/static/css/main.a617e044.chunk.css",
-    "main.js": "/rick-and-morty-task/static/js/main.cb49b8be.chunk.js",
-    "main.js.map": "/rick-and-morty-task/static/js/main.cb49b8be.chunk.js.map",
-    "runtime-main.js": "/rick-and-morty-task/static/js/runtime-main.a6c54ca8.js",
-    "runtime-main.js.map": "/rick-and-morty-task/static/js/runtime-main.a6c54ca8.js.map",
-    "static/js/2.b6e5decc.chunk.js": "/rick-and-morty-task/static/js/2.b6e5decc.chunk.js",
-    "static/js/2.b6e5decc.chunk.js.map": "/rick-and-morty-task/static/js/2.b6e5decc.chunk.js.map",
-    "static/js/3.42bd3c3e.chunk.js": "/rick-and-morty-task/static/js/3.42bd3c3e.chunk.js",
-    "static/js/3.42bd3c3e.chunk.js.map": "/rick-and-morty-task/static/js/3.42bd3c3e.chunk.js.map",
+    "main.css": "/rick-and-morty-task/static/css/main.787f37a1.chunk.css",
+    "main.js": "/rick-and-morty-task/static/js/main.2d4d6c57.chunk.js",
+    "main.js.map": "/rick-and-morty-task/static/js/main.2d4d6c57.chunk.js.map",
+    "runtime-main.js": "/rick-and-morty-task/static/js/runtime-main.2cf24c6e.js",
+    "runtime-main.js.map": "/rick-and-morty-task/static/js/runtime-main.2cf24c6e.js.map",
+    "static/css/2.da1eef19.chunk.css": "/rick-and-morty-task/static/css/2.da1eef19.chunk.css",
+    "static/js/2.6d7fe59c.chunk.js": "/rick-and-morty-task/static/js/2.6d7fe59c.chunk.js",
+    "static/js/2.6d7fe59c.chunk.js.map": "/rick-and-morty-task/static/js/2.6d7fe59c.chunk.js.map",
+    "static/js/3.87a854f5.chunk.js": "/rick-and-morty-task/static/js/3.87a854f5.chunk.js",
+    "static/js/3.87a854f5.chunk.js.map": "/rick-and-morty-task/static/js/3.87a854f5.chunk.js.map",
     "index.html": "/rick-and-morty-task/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/rick-and-morty-task/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.b6e5decc.chunk.js.LICENSE.txt": "/rick-and-morty-task/static/js/2.b6e5decc.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/rick-and-morty-task/static/media/logo.6ce24c58.svg"
+    "static/css/2.da1eef19.chunk.css.map": "/rick-and-morty-task/static/css/2.da1eef19.chunk.css.map",
+    "static/css/main.787f37a1.chunk.css.map": "/rick-and-morty-task/static/css/main.787f37a1.chunk.css.map",
+    "static/js/2.6d7fe59c.chunk.js.LICENSE.txt": "/rick-and-morty-task/static/js/2.6d7fe59c.chunk.js.LICENSE.txt",
+    "static/media/NavigationBar.scss": "/rick-and-morty-task/static/media/Rick_and_Morty_logo.42c8df0b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a6c54ca8.js",
-    "static/js/2.b6e5decc.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.cb49b8be.chunk.js"
+    "static/js/runtime-main.2cf24c6e.js",
+    "static/css/2.da1eef19.chunk.css",
+    "static/js/2.6d7fe59c.chunk.js",
+    "static/css/main.787f37a1.chunk.css",
+    "static/js/main.2d4d6c57.chunk.js"
   ]
 }
