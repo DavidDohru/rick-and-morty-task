@@ -2,10 +2,14 @@ import React,{useState} from 'react';
 import './NavigationBar.scss';
 import { Navbar, Container } from 'react-bootstrap';
 import {
-  BrowserRouter,
-  Link
+  Link,
+  BrowserRouter as Router,Switch,Route,
 } from "react-router-dom";
-import { NavigationBarRoute } from '../RouteNavBar/NavigationBarRoute/RouteNavBar';
+import { EpisodesList } from '../RouteNavBar/Episodes/EpisodesList/EpisodesList';
+import { LocationsList } from '../RouteNavBar/Locations/LocationsList/LocationsList';
+import { MyWatchList } from '../RouteNavBar/MyWatchList/MyList/MyWatchList';
+import { CharactersList } from '../RouteNavBar/Characters/CharactersList/Charactesrs';
+//import { NavigationBarRoute } from '../RouteNavBar/NavigationBarRoute/RouteNavBar';
 import { useDispatch } from 'react-redux';
 
 export const NavigationBar = () => {
@@ -13,7 +17,7 @@ export const NavigationBar = () => {
   const [currentUrl,setCurrentUrl] = useState('/');
   const [choosenLink,setChoosenLink] = useState("");
   return (
-    <BrowserRouter>
+    <Router>
       <Navbar
         className="NavigationBar" 
         bg="dark"
@@ -109,7 +113,20 @@ export const NavigationBar = () => {
             </nav>
         </Container>
       </Navbar>
-      <NavigationBarRoute/>
-    </BrowserRouter>
+      <Switch>
+        <Route path="/Episodes" exact>
+          <EpisodesList/>
+        </Route>
+        <Route path="/Locations" exact>
+          <LocationsList/>
+        </Route>
+        <Route path="/My_watch_list" exact>
+          <MyWatchList/>
+        </Route>
+        <Route path="/" exact>
+          <CharactersList/>
+        </Route>
+      </Switch>
+    </Router>
   )
 };
