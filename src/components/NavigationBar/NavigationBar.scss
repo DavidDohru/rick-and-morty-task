@@ -1,7 +1,92 @@
-.NavigationBar__logo {
-  width:150px;
-  height:80px;
-  background: url('../../Images/Rick_and_Morty_logo.png') center no-repeat;
-  margin-right: 50px;
-  background-size: contain;
+$hover_text-color :rgb(173, 173, 173);
+
+.NavigationBar {
+  &__icon-filter {
+    border-radius: 2px;
+    margin-left:10px;
+    width: 40px;
+    height: 40px;
+    background: url('../../Images/Slider.png') center no-repeat;
+    background-size: contain;
+    transition: ease 0.3s;
+    &:hover {
+      cursor: pointer;
+      transition: ease 0.3s;
+      transform: scale(1.05);
+    }
+    &:active {
+      transform: scale(1.2);
+    }
+
+    @media (max-width:800px) {
+      position: absolute;
+      right: 150px;
+      transition: ease 0.3s;
+      top: 50px;
+    }
+    @media (max-width:600px) {
+      position: absolute;
+      transition: ease 0.3s;
+      right: 60px;
+      top: 50px;
+    }
+  }
+  &__logo {
+    width:150px;
+    height:80px;
+    background: url('../../Images/Rick_and_Morty_logo.png') center no-repeat;
+    margin-right: 50px;
+    background-size: contain;
+    transition: ease 0.3s;
+    &:hover {
+      transition: ease 0.3s;
+      transform: scale(1.04);
+    }
+    &-filter_container {
+      position: relative;
+    }
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin : 0 auto;
+    padding: 10px 80px;
+    @media (max-width:800px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+  &__link-container {
+    color:white;
+    display: flex;
+    align-items: center;
+    gap:40px;
+    @media (max-width:800px) {
+      flex-direction: column;
+    }
+   
+  }
+
+  &__link {
+    display: inline-block;
+    position: relative;
+    color:white;
+    text-decoration: none;
+    &:hover {
+      color: $hover_text-color;
+    }
+  }
+}
+
+.choosen_nav_link {
+  color: $hover_text-color;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    width: 100%;
+    height: 1px;
+    background-color: $hover_text-color;
+  }
 }

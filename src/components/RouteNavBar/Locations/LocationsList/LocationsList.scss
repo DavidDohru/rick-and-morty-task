@@ -1,0 +1,15 @@
+.Locations__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  &-title {
+    display: flex;
+    margin: 50px 0;
+    justify-content: center;
+  }
+
+  &-form {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+}

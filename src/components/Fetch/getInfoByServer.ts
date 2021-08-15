@@ -1,30 +1,30 @@
 import axios from 'axios';
 import { characters, locations, episodes } from './fetchAllUrl';
 
-export const getCharactersByServer = async(setState:any) => {
+export const getCharactersByServer = async(setState:(a:any) => void) => {
   try {
     const allCharacters = await axios.get(characters);
-    setState(allCharacters.data);
+    setState(allCharacters.data.results);
   }
   catch (err) {
     alert (err);
   }
 };
 
-export const getLocationsByServer = async(setState:any) => {
+export const getLocationsByServer = async(setState:(a:any) => void) => {
   try {
     const allLocation = await axios.get(locations);
-    setState(allLocation.data);
+    setState(allLocation.data.results);
   }
   catch (err) {
     alert (err);
   }
 }
 
-export const getEpisodesByServer = async(setState:any) => {
+export const getEpisodesByServer = async(setState:(a:any) => void) => {
   try {
     const allEpisodes = await axios.get(episodes);
-    setState(allEpisodes.data);
+    setState(allEpisodes.data.results);
   }
   catch (err) {
     alert (err);

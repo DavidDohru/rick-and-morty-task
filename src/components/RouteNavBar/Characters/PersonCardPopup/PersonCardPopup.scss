@@ -1,0 +1,8 @@
+.PersonCardPopup__container {
+  display: flex;
+  gap:50px;
+  padding:50px;
+  @media (max-width:1000px) {
+    flex-direction: column;
+  }
+}

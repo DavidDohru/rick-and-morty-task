@@ -3,6 +3,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Used technology stack: React / typescript + Redux. To retrieve information from the axios library server. For stylization - SASS and library React / bootstrap. For routing on application - used library React Router.
+
 ## Available Scripts
 
 In the project directory, you can run:
