@@ -3,13 +3,9 @@ import './NavigationBar.scss';
 import { Navbar, Container } from 'react-bootstrap';
 import {
   Link,
-  BrowserRouter as Router,Switch,Route,
+  BrowserRouter as Router,
 } from "react-router-dom";
-import { EpisodesList } from '../RouteNavBar/Episodes/EpisodesList/EpisodesList';
-import { LocationsList } from '../RouteNavBar/Locations/LocationsList/LocationsList';
-import { MyWatchList } from '../RouteNavBar/MyWatchList/MyList/MyWatchList';
-import { CharactersList } from '../RouteNavBar/Characters/CharactersList/Charactesrs';
-//import { NavigationBarRoute } from '../RouteNavBar/NavigationBarRoute/RouteNavBar';
+import { NavigationBarRoute } from '../RouteNavBar/NavigationBarRoute/RouteNavBar';
 import { useDispatch } from 'react-redux';
 
 export const NavigationBar = () => {
@@ -113,20 +109,7 @@ export const NavigationBar = () => {
             </nav>
         </Container>
       </Navbar>
-      <Switch>
-        <Route path="/Episodes" exact>
-          <EpisodesList/>
-        </Route>
-        <Route path="/Locations" exact>
-          <LocationsList/>
-        </Route>
-        <Route path="/My_watch_list" exact>
-          <MyWatchList/>
-        </Route>
-        <Route path="/" exact>
-          <CharactersList/>
-        </Route>
-      </Switch>
+      <NavigationBarRoute/>
     </Router>
   )
 };
