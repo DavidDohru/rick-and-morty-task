@@ -8,9 +8,6 @@ import { MyWatchList } from '../MyWatchList/MyList/MyWatchList';
 export const NavigationBarRoute = () => {
   return (
     <Switch>
-    <Route path="/" exact>
-      <CharactersList/>
-    </Route>
     <Route path="/Episodes" exact>
       <EpisodesList/>
     </Route>
@@ -19,6 +16,9 @@ export const NavigationBarRoute = () => {
     </Route>
     <Route path="/My_watch_list" exact>
       <MyWatchList/>
+    </Route>
+    <Route path="">
+      <CharactersList/>
     </Route>
     </Switch>
   )
