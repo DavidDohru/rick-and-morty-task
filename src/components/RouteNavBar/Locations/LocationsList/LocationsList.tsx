@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { Table } from 'react-bootstrap';
-import { Route } from 'react-router-dom';
 import { getLocationsByServer } from '../../../Fetch/getInfoByServer';
 import './LocationsList.scss';
 import { locationsTypes } from '../../../../types/Locations/LocationsTypes';
@@ -45,7 +44,6 @@ export const LocationsList = () => {
 
 
   return (
-  <Route path="/Locations" exact>
     <div className="Locations__container">
       <div className="Locations__container-title">
         <h2>Locations</h2>
@@ -79,6 +77,5 @@ export const LocationsList = () => {
           </tbody>
         </Table>
     </div>
-  </Route>
   );
 }

@@ -1,5 +1,4 @@
 import React,{ useEffect,useState } from 'react';
-import { Route } from 'react-router';
 import { getCharactersByServer } from '../../../Fetch/getInfoByServer';
 import './Characters.scss';
 import { CharacterCard } from '../CharacterCard/CharacterCard';
@@ -45,7 +44,6 @@ export const CharactersList = () => {
   },[]);
 
   return (
-    <Route path="/" exact>
       <div className="RouteCharacters">
         <div className="RouteCharacters__container_title">
           <h2>List of Characters</h2>
@@ -61,6 +59,5 @@ export const CharactersList = () => {
           ))}
         </div>
       </div>
-     </Route>
   );
 } 

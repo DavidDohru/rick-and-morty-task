@@ -1,5 +1,4 @@
 import React , { useState, useEffect } from 'react';
-import { Route } from 'react-router-dom';
 import { getEpisodesByServer } from '../../../Fetch/getInfoByServer';
 import { Form, Table } from 'react-bootstrap';
 import './EpisodesList.scss';
@@ -27,7 +26,6 @@ export const EpisodesList = () => {
   }
 
   return (
-    <Route path="/Episodes" exact>
       <div className={"Episodes__container"}>
         <div className="Episodes__container-title">
             <h2>Episodes:</h2>
@@ -54,6 +52,5 @@ export const EpisodesList = () => {
           ))}
         </Table>
       </div>
-    </Route>
   );
 } 

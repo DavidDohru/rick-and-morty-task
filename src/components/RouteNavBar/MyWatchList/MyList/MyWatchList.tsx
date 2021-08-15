@@ -1,6 +1,5 @@
 import React ,{ useState, useEffect }from 'react';
 import { Button, Form, CloseButton } from 'react-bootstrap';
-import {Route} from 'react-router-dom';
 import './MyWatchList.scss';
 import { useSelector } from 'react-redux';
 import { 
@@ -29,7 +28,6 @@ export const MyWatchList = () => {
 
 
   return(
-    <Route path="/My_watch_list">
     <div className="MyWatchList__container">
       {watchList.length > 0 && <div className="MyWatchList__container-title">
         <h2>My watch list :</h2>
@@ -106,6 +104,5 @@ export const MyWatchList = () => {
       </div>
       )}
     </div>
-    </Route>
   )
 }
