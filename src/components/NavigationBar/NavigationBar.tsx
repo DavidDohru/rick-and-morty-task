@@ -3,7 +3,6 @@ import './NavigationBar.scss';
 import { Navbar, Container } from 'react-bootstrap';
 import {
   Link,
-  BrowserRouter as Router,
 } from "react-router-dom";
 import { NavigationBarRoute } from '../RouteNavBar/NavigationBarRoute/RouteNavBar';
 import { useDispatch } from 'react-redux';
@@ -11,9 +10,9 @@ import { useDispatch } from 'react-redux';
 export const NavigationBar = () => {
   const dispatch = useDispatch();
   const [currentUrl,setCurrentUrl] = useState('/');
-  const [choosenLink,setChoosenLink] = useState("");
+  const [choosenLink,setChoosenLink] = useState("character");
   return (
-    <Router>
+    <>
       <Navbar
         className="NavigationBar" 
         bg="dark"
@@ -110,6 +109,6 @@ export const NavigationBar = () => {
         </Container>
       </Navbar>
       <NavigationBarRoute/>
-    </Router>
+    </>
   )
 };
