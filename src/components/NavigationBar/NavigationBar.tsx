@@ -1,16 +1,20 @@
 import React,{useState} from 'react';
 import './NavigationBar.scss';
 import { Navbar, Container } from 'react-bootstrap';
-import {
-  Link,
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { NavigationBarRoute } from '../RouteNavBar/NavigationBarRoute/RouteNavBar';
 import { useDispatch } from 'react-redux';
 
+if (JSON.parse(localStorage.getItem('link')!) === undefined) {
+  localStorage.setItem('link',JSON.stringify("/"));
+}
+if (JSON.parse(localStorage.getItem('choosen')!) === undefined) {
+  localStorage.setItem('choosen',JSON.stringify("/"));
+}
 export const NavigationBar = () => {
   const dispatch = useDispatch();
-  const [currentUrl,setCurrentUrl] = useState('/');
-  const [choosenLink,setChoosenLink] = useState("");
+  const [currentUrl,setCurrentUrl] = useState(JSON.parse(localStorage.getItem('link')!)||"/");
+  const [choosenLink,setChoosenLink] = useState(JSON.parse(localStorage.getItem('choosen')!)||"/");
   return (
     <>
       <Navbar
@@ -25,6 +29,8 @@ export const NavigationBar = () => {
               onClick={() => {
                 setCurrentUrl("/");
                 setChoosenLink("character");
+                localStorage.setItem('link',JSON.stringify("/"));
+                localStorage.setItem('choosen',JSON.stringify("character"));
               }} 
               to="/"
             >
@@ -36,6 +42,8 @@ export const NavigationBar = () => {
                 onClick={()=> {
                   setChoosenLink("character");
                   setCurrentUrl("/");
+                  localStorage.setItem('link',JSON.stringify("/"));
+                  localStorage.setItem('choosen',JSON.stringify("character"));
                 }}
                 className={`NavigationBar__link 
                   ${choosenLink === "character" 
@@ -49,7 +57,9 @@ export const NavigationBar = () => {
               <Link
                onClick={()=> {
                  setCurrentUrl("/Episodes");
+                 localStorage.setItem('link',JSON.stringify("/Episodes"));
                  setChoosenLink("episodes");
+                 localStorage.setItem('choosen',JSON.stringify("episodes"));
                 }}
                className={`NavigationBar__link 
                  ${choosenLink === "episodes" 
@@ -63,7 +73,9 @@ export const NavigationBar = () => {
               <Link
                 onClick={() => {
                   setCurrentUrl("/Locations");
+                  localStorage.setItem('link',JSON.stringify("/Locations"));
                   setChoosenLink("locations");
+                  localStorage.setItem('choosen',JSON.stringify("locations"));
                 }}
                 className={`NavigationBar__link 
                   ${choosenLink === "locations"
@@ -77,7 +89,9 @@ export const NavigationBar = () => {
               <Link
                 onClick={() => {
                   setCurrentUrl("/My_watch_list");
+                  localStorage.setItem('link',JSON.stringify("/My_watch_list"));
                   setChoosenLink("My_watch_list");
+                  localStorage.setItem('choosen',JSON.stringify("My_watch_list"));
                 }}
                 className={`NavigationBar__link 
                   ${choosenLink === "My_watch_list"

@@ -82,6 +82,7 @@ export const MyWatchList = () => {
       }
       {hideShowForm && 
       <Button 
+        className="MyWatchList__container-button_submit"
         onClick={()=> {
         if (nameEpisode.length) {
           const listDate = {name: nameEpisode,id:new Date().toLocaleString()}

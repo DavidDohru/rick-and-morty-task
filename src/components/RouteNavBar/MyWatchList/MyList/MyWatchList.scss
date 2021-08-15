@@ -6,6 +6,10 @@ $max_width : 1200px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  &-button_submit {
+    max-width: $max_width / 3;
+    margin: 0 auto;
+  }
   &_empty {
     background: url('./../../../../Images/backgound.jpg') no-repeat;
     height: $max_width/1.7;
