@@ -10,7 +10,7 @@ import { useDispatch } from 'react-redux';
 export const NavigationBar = () => {
   const dispatch = useDispatch();
   const [currentUrl,setCurrentUrl] = useState('/');
-  const [choosenLink,setChoosenLink] = useState("character");
+  const [choosenLink,setChoosenLink] = useState("");
   return (
     <>
       <Navbar
