@@ -1,49 +1,42 @@
 [Demo Link](https://daviddohru.github.io/rick-and-morty-task/)
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+#Stack technologys : 
 Used technology stack: React / typescript + Redux. To retrieve information from the axios library server. For stylization - SASS and library React / bootstrap. For routing on application - used library React Router.
 
-## Available Scripts
+#Rick and Morty test task
+Before you read the description please take a look at the APIs that you will work with:
+https://rickandmortyapi.com/documentation/#introduction
 
-In the project directory, you can run:
+#Task Description
+The goal of the task is to create a react web application that will display all the information about the Rick and
+Morty Tv series. It Should have 4 tabs in the navigation panel: Characters, Episodes, Locations, My watch list.
+1. The Characters page should have a list of all characters that are in the tv series (Please implement
+pagination for that. So that there are 20-character cards per page). The list should have a filter by “species”,
+“status”, “gender” fields. The character card should have a character picture (if any), and some additional info
+about that character (your choice). When you click on the character card – the popup should be opened with all the
+character info.
+2. The episode page should be really similar to the character page, the episodes should have been filtered by
+“name” field (if you will have inspiration please add other filters). As there is no image in episodes, please make
+this not a list but a table, also there should be 20 episodes per page(pagination).
+3. The Locations page should also be a table with pagination and should have filtered by “name”, “type”,
+“dimension” field.
+4. My watch list should have a simple to do function. There should be an input field where user can write
+down a new episode to watch later. There are no APIs for this subtask so please use local storage to store the To
+Do items. The toDo list item should have a remove button to remove it from the list and the checkbox to mark it as
+complete(when the page has reloaded the status of the task and the list should not change).
+Technical description
+Here is the list of APIs that you will need - https://rickandmortyapi.com/documentation/#introduction
+For this task please use the following:
+● React.js
+● React-redux/context (optional)
+● Typescript ( optional)
+● Material UI - https://material-ui.com/ for all popups, buttons, etc. (Or use any other UI library,
+optional)
+● Scss/CSS
+There is no design for this task, So it is also up to you, but the design should look good and user friendly.
+For API calls use fetch.
+Please create as many decomposed components as possible. And try to reuse them as much as possible.
+The code architecture should be logically correct. There should be a separate folder for each page, small components
+should be separated from the big ones. For shared components create a folder UI and store them there (The
+components from the episodes page should only be used in the episodes folder).
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
