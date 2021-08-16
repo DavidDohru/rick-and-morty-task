@@ -1,7 +1,7 @@
 [Demo Link](https://daviddohru.github.io/rick-and-morty-task/)
 
-#Stack technologys : 
-Used technology stack: React / typescript + Redux. To retrieve information from the axios library server. For stylization - SASS and library React / bootstrap. For routing on application - used library React Router.
+#Stack technology 
+React / typescript + Redux. To retrieve information from the axios library server. For stylization - SASS and library React / bootstrap. For routing on application - used library React Router.
 
 #Rick and Morty test task
 Before you read the description please take a look at the APIs that you will work with:
